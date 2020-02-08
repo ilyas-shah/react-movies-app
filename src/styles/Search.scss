@@ -1,0 +1,30 @@
+.header-container {
+    text-align: center;
+    background-color: #c5c5c5;
+    padding: 10px 0px;
+
+    .search-input {
+        width: 250px;
+        border-radius: 10px;
+        height: 14px;
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #756b6b;
+        font-size: 0.9rem;
+        &:hover {
+            cursor: text;
+        }
+    }
+
+    .search-button {
+        background-color: #1fa241;
+        color: #ffff;
+        width: 55px;
+        height: 24px;
+        border-radius: 12px;
+        font-size: .7rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
