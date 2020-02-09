@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import getSuggestions from "./samplelist";
+import "../../../styles/Search.scss";
 
 const Search = () => {
   const [query, setQuery] = useState("");
