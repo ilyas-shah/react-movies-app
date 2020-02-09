@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../../../styles/header/navbar.scss'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='nav-wrapper'>
       <NavLink to="/" exact={true} activeClassName="is-active">
         Home
       </NavLink>
