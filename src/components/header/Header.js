@@ -9,7 +9,7 @@ import "../../styles/header/header.scss";
 const Header = () => {
   return (
     <header>
-      <div className="nav-container">
+      <div className="header-container">
         <Logo />
         <Navbar />
         <Search />

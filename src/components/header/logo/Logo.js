@@ -1,11 +1,14 @@
 import React from "react";
-import Link from "@material-ui/core/Link";
+import { NavLink } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <div className="logo">
-      <Link to="/">I am a logo component.</Link>
-    </div>
+    <>
+      <NavLink to="/">
+        {/* <img src="./logo192.png" alt="logo" /> */}
+        <strong>GET FLIX</strong>
+      </NavLink>
+    </>
   );
 };
 

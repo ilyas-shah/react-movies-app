@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="nav">
-      <NavLink to="/" activeClassName="is-active">
+    <nav>
+      <NavLink to="/" exact={true} activeClassName="is-active">
         Home
       </NavLink>
-      <NavLink to="/" activeClassName="is-active">
+      <NavLink to="/tv" activeClassName="is-active">
         Tv Shows
       </NavLink>
-      <NavLink to="/" activeClassName="is-active">
+      <NavLink to="/movies" activeClassName="is-active">
         Movies
       </NavLink>
-    </div>
+    </nav>
   );
 };
 
