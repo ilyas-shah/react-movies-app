@@ -1,15 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SearchItem from "./SearchItem";
 
-const SearchList = ({ results }) => {
+const SearchList = ({ suggestions }) => {
+  // console.log("suggestions", suggestions);
   return (
     <div className="search-suggestions">
-      {!results.length
-        ? console.log("respond")
-        : // <h1>No Results Found</h1>
-          results.map(result => {
-            return <SearchItem key={result.id} result={result} />;
-          })}
+      <ol>
+        {!suggestions.length
+          ? console.log("respond")
+          : suggestions.map(suggestion => {
+              return <SearchItem key={suggestion.id} suggestion={suggestion} />;
+            })}
+      </ol>
     </div>
   );
 };

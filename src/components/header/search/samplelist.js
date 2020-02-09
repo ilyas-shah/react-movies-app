@@ -100,6 +100,6 @@ const db = [
   }
 ];
 
-export default query => {
-  return db.filter(row => row.title === query);
+export default () => {
+  return db;
 };

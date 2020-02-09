@@ -1,16 +1,15 @@
 import React from "react";
 
-const SearchItem = props => {
-  const { title, id } = props;
-
+const SearchItem = ({ suggestion }) => {
+  const { title, id } = suggestion;
   return (
-    <div>
-      <a href={`/details/${id}`} className="search-item">
-        <div className="image-container">
-          <p>{title}</p>
-        </div>
-      </a>
-    </div>
+    <>
+      <li style={{ listStyle: "none" }}>
+        <a href={`/details/${id}`} className="search-item">
+          {title}
+        </a>
+      </li>
+    </>
   );
 };
 
