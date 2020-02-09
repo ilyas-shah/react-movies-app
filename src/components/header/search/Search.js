@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import getSuggestions from "./samplelist";
+import "../../../styles/header/Search.scss";
+import SearchIcon from '@material-ui/icons/Search';
 import SearchList from "./SearchList";
 
 const Search = () => {
@@ -25,6 +27,7 @@ const Search = () => {
   return (
     <div className="search">
       <form onSubmit={() => handleSubmit}>
+      <SearchIcon/>
         <input
           className="search-input"
           type="text"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, Button, MenuItem } from "@material-ui/core";
+import '../../../styles/header/account.scss'
 
 const Account = () => {
   const [anchorEl, setAnchorEl] = useState(null);

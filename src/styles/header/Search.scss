@@ -1,0 +1,19 @@
+.search {
+  .MuiSvgIcon-root {
+    margin-top: 24px;
+    position: fixed;
+    right: 22%;
+	}
+   .search-input{
+    cursor: pointer;
+    border: 1px solid rgba(129,151,164,.5);
+    background-color: rgba(15,23,30,.2);
+    font-size: 17px;
+    line-height: 24px;
+    padding: 7px 0 7px 34px;
+    margin-top: 15px;
+    position: fixed;
+    right: 10%;
+    color: white;;
+  }
+}
