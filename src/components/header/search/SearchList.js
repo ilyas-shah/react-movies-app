@@ -2,12 +2,12 @@ import React from "react";
 import SearchItem from "./SearchItem";
 
 const SearchList = ({ suggestions }) => {
-  // console.log("suggestions", suggestions);
+  console.log("suggestions", suggestions);
   return (
     <div className="search-suggestions">
       <ol>
         {!suggestions.length
-          ? console.log("respond")
+          ? console.log("No results")
           : suggestions.map(suggestion => {
               return <SearchItem key={suggestion.id} suggestion={suggestion} />;
             })}

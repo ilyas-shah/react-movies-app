@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { Menu, Button, MenuItem } from "@material-ui/core";
-import '../../../styles/header/account.scss'
+import { Menu, MenuItem } from "@material-ui/core";
+import PersonIcon from "@material-ui/icons/Person";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+// import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+
+import "../../../styles/header/account.scss";
 
 const Account = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -15,9 +19,12 @@ const Account = () => {
 
   return (
     <div className="account">
-      <Button variant="outlined" onClick={handleClick} color="primary">
-        Account
-      </Button>
+      <PersonIcon variant="outlined" onClick={handleClick}>
+        {/* {!anchorEl && <ArrowDropDownIcon onClick={handleClick} />} */}
+        {/* {anchorEl && <ArrowDropUpIcon onClick={handleClick} />} */}
+      </PersonIcon>
+      {!anchorEl && <ArrowDropDownIcon />}
+
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}

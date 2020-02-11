@@ -1,12 +1,18 @@
 .account {
- 	button {
-    position: fixed;
-    right: 2%;
-    margin-top: 18px;
-	}
-	.MuiButtonBase-root{
-    border: 1px solid rgba(129,151,164,.5);
-		background-color: rgba(15,23,30,.2);
-		color: #ffff;
-	}
+  // button {
+  // position: fixed;
+  // right: 2%;
+  // position: absolute;
+  // right: 100px;
+  // top: 20px;
+  // margin-top: 18px;
+  // }
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  .MuiButtonBase-root {
+    border: 1px solid rgba(129, 151, 164, 0.5);
+    background-color: rgba(15, 23, 30, 0.2);
+    color: #ffff;
+  }
 }
