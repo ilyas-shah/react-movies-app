@@ -1,13 +1,15 @@
 .nav-wrapper {
-  padding-top: 15px;
-  margin-left: 80px;
+  // padding-top: 15px;
+  // margin-left: 80px;
+  position: relative;
+  left: 10%;
   a {
     color: white !important;
     display: inline-block;
     width: auto;
     padding: 0;
     margin: 8px;
-    font-weight: 300;
+    font-weight: 700px;
     text-decoration: none;
     &:hover {
       color: white;
