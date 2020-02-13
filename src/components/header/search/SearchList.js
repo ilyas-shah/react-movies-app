@@ -2,7 +2,6 @@ import React from "react";
 import SearchItem from "./SearchItem";
 
 const SearchList = ({ suggestions }) => {
-  console.log("suggestions", suggestions);
   return (
     <div className="search-suggestions">
       <ol>
