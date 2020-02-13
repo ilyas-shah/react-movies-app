@@ -49,7 +49,13 @@ const Search = () => {
   return (
     <div className="search">
       <form onSubmit={() => handleSubmit}>
-        <SearchIcon />
+        <SearchIcon
+          style={{
+            position: "absolute",
+            left: "7px",
+            top: "10px"
+          }}
+        />
         <input
           className="search-input"
           type="search"
