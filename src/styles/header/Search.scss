@@ -1,21 +1,21 @@
 .search {
-  .MuiSvgIcon-root {
-    margin-top: 24px;
-    position: fixed;
-    right: 21%;
-  }
-
-  .cancel-button {
-    right: 180px;
-  }
+  position: absolute;
+  height: inherit;
+  top: 25%;
+  right: 10%;
+  z-index: 1;
 
   .search-suggestions {
-    margin: 40px;
+    z-index: 21;
+    margin: 0;
+    position: relative;
+    width: 100%;
     ol {
+      margin: 0px;
       background: #252e39;
-      position: fixed;
-      width: 215px;
-      right: 10%;
+      position: absolute;
+      width: 100%;
+      // right: 10%;
       padding: 0px;
       li {
         list-style: none;
@@ -41,6 +41,8 @@
   }
 
   .search-input {
+    width: 250px;
+    height: inherit;
     outline: white;
     align-items: center;
     cursor: pointer;
@@ -49,9 +51,8 @@
     font-size: 17px;
     line-height: 24px;
     padding: 7px 10px 7px 34px;
-    margin-top: 15px;
-    position: fixed;
-    right: 10%;
+    // margin-top: 15px;
+    // position: absolute;
     color: white;
   }
 }
