@@ -53,7 +53,7 @@ const Search = () => {
           style={{
             position: "absolute",
             left: "7px",
-            top: "10px"
+            top: "29px"
           }}
         />
         <input

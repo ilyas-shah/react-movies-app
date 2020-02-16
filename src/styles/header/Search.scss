@@ -1,9 +1,11 @@
 .search {
   position: absolute;
   height: inherit;
-  top: 25%;
-  right: 10%;
+  // top: 25%;
+  padding-top: 20px;
+  right: 7%;
   z-index: 1;
+  box-sizing: border-box;
 
   .search-suggestions {
     z-index: 21;
@@ -41,6 +43,7 @@
   }
 
   .search-input {
+    border-radius: 2px;
     width: 250px;
     height: inherit;
     outline: white;
@@ -51,8 +54,6 @@
     font-size: 17px;
     line-height: 24px;
     padding: 7px 10px 7px 34px;
-    // margin-top: 15px;
-    // position: absolute;
     color: white;
   }
 }
