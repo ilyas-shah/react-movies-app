@@ -23,7 +23,6 @@ const Carousel = () => {
 
   useEffect(() => {
     // Fetch images from an API call later.
-    console.log(nextIndex, prevIndex, currentIndex);
     setImages(imageList);
   }, []);
 
