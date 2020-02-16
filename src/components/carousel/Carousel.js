@@ -52,20 +52,16 @@ const Carousel = () => {
   const handleRight = () => {
     if (nextIndex === images.length) {
       setShowRight(false);
-
-      console.log(nextIndex, prevIndex, currentIndex);
       setTranslateWidth(translateWidth - 100);
     } else {
       setTranslateWidth(translateWidth - 100);
-      // console.log(nextIndex, prevIndex, currentIndex);
+
       setPrevIndex(currentIndex);
       setNextIndex(nextIndex + 1);
       setCurrentIndex(currentIndex + 1);
 
       setShowLeft(true);
-      console.log(nextIndex, prevIndex, currentIndex);
     }
-    // console.log(translateWidth);
   };
 
   const handleLeft = () => {
